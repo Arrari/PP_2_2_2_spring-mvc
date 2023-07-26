@@ -31,8 +31,8 @@ public class CarServiceImpl implements CarService {
 
     @Override
     public List<Car> getNumCars(int num) {
-        if (num > 1) {
-            return carList.subList(0, num - 1);
+        if (num > 0) {
+            return carList.subList(0, num);
         }
         return null;
     }
